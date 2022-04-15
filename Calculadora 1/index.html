@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="data()">
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <section>
+        <!-- Inputs para entrada de dados e input para disparar a funcao das operacoes -->
+        <div>
+            <p>Informe um valor: <input type="number" name="num1" id="num1" style="width: 50px;"></p>
+            <p>Informe um valor: <input type="number" name="num2" id="num2" style="width: 50px;"></p>
+            <input type="radio" name="radio" id="radio0" checked> Soma
+            <input type="radio" name="radio" id="radio1"> Subtracao
+            <input type="radio" name="radio" id="radio2"> Multiplicacao
+            <input type="radio" name="radio" id="radio3"> Divisao
+            <input type="button" value="Calcular" style="margin-left: 33px;" onclick="calcular()">
+        </div>
+    </section>
+    <br>
+    <section id="section2">
+        <!-- Aqui sai o resultado e o input para limpar o resultado tambem -->
+        <div id="resultado">
+            Resultado:
+        </div>
+    </section>
+    <footer>
+        <p>&copy;EduardoGarzon</p>
+    </footer>
+    <section id="section3">
+        <div id="data">
+            Data: 
+        </div>
+    </section>
+    <!-- Link para JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
